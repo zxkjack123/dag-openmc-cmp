@@ -98,7 +98,7 @@ def main(geom_type, nps, run=False, plot=False, vol_calc=False):
     tally.filters.append(energy_filter)
     # mesh filter
     mesh = openmc.Mesh(mesh_id=1, name="n_flux")
-    mesh.dimension= [10, 10, 10]
+    mesh.dimension= [1, 1, 1]
     mesh.lower_left = (-49.5, 5.6, -49.2)
     mesh.upper_right = (49.5, 77.43, 49.2)
     mesh_filter = openmc.MeshFilter(mesh)
