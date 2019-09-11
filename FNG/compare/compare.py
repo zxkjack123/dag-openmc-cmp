@@ -112,7 +112,7 @@ def plot_n_flux(n_flux1, n_flux2, x_bins=e_bins, label1='DagOpenMC', label2='Ope
     plt.close()
 
 def get_filename_from_case(case):
-    filename = os.path.join(os.getcwd(), '..', ''.join([case, '_run']), ''.join(['statepoint.5.fng.', case, '.1e9.h5']))
+    filename = os.path.join(os.getcwd(), '..', ''.join([case, '_run']), ''.join(['statepoint.5.fng.', case, '.1e7.h5']))
     return filename
 
 def get_tally_results(filename, tally_id=1):
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     results = []
     rel_errs = []
     sp_files = []
-    num_ves = 1000
+    num_ves = 1
     num_e_groups = 175
     tally_id = 1
     # volume of each voxel
