@@ -1,7 +1,6 @@
 import os
 import sys
 from argparse import ArgumentParser
-
 import numpy as np
 from shutil import copyfile
 import openmc
@@ -43,8 +42,8 @@ def main(geom_type, nps, run=False, plot=False, vol_calc=False):
     # stochastic volume calculation
     if vol_calc:
         model.settings.run_mode = 'volume'
-        lower_left = (-50.0, 0.0, -50.0)
-        upper_right = (50.0, 100, 50.0)
+        lower_left = (-49.5, 5.6, -49.2)
+        upper_right = (49.5, 77.43, 49.2)
         cells = [ cell for cell in geom.root_universe.cells.values() ]
         volume_calc = openmc.VolumeCalculation(cells, 10000000, lower_left, upper_right)
         model.settings.volume_calculations = [volume_calc]

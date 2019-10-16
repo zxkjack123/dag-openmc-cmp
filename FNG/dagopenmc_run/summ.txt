@@ -1,0 +1,416 @@
+HDF5 "summary.h5" {
+GROUP "/" {
+   ATTRIBUTE "date_and_time" {
+      DATATYPE  H5T_STRING {
+         STRSIZE 19;
+         STRPAD H5T_STR_NULLTERM;
+         CSET H5T_CSET_ASCII;
+         CTYPE H5T_C_S1;
+      }
+      DATASPACE  SCALAR
+      DATA {
+      (0): "2019-09-11 15:36:42"
+      }
+   }
+   ATTRIBUTE "filetype" {
+      DATATYPE  H5T_STRING {
+         STRSIZE 7;
+         STRPAD H5T_STR_NULLTERM;
+         CSET H5T_CSET_ASCII;
+         CTYPE H5T_C_S1;
+      }
+      DATASPACE  SCALAR
+      DATA {
+      (0): "summary"
+      }
+   }
+   ATTRIBUTE "git_sha1" {
+      DATATYPE  H5T_STRING {
+         STRSIZE 40;
+         STRPAD H5T_STR_NULLTERM;
+         CSET H5T_CSET_ASCII;
+         CTYPE H5T_C_S1;
+      }
+      DATASPACE  SCALAR
+      DATA {
+      (0): "f57bcdba1596022d53078833e8d44a4416398286"
+      }
+   }
+   ATTRIBUTE "openmc_version" {
+      DATATYPE  H5T_STD_I32LE
+      DATASPACE  SIMPLE { ( 3 ) / ( 3 ) }
+      DATA {
+      (0): 0, 11, 0
+      }
+   }
+   ATTRIBUTE "version" {
+      DATATYPE  H5T_STD_I32LE
+      DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+      DATA {
+      (0): 6, 0
+      }
+   }
+   GROUP "geometry" {
+      ATTRIBUTE "dagmc" {
+         DATATYPE  H5T_STD_I32LE
+         DATASPACE  SCALAR
+         DATA {
+         (0): 1
+         }
+      }
+   }
+   GROUP "macroscopics" {
+      ATTRIBUTE "n_macroscopics" {
+         DATATYPE  H5T_STD_U64LE
+         DATASPACE  SCALAR
+         DATA {
+         (0): 0
+         }
+      }
+   }
+   GROUP "materials" {
+      GROUP "material 1" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0.0672198
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 31 ) / ( 31 ) }
+            DATA {
+            (0): 1.00622e-06, 3.70693e-06, 0.00479019, 5.18094e-05,
+            (4): 0.000244245, 1.1416e-05, 0.00455512, 0.000212497, 0.0039385,
+            (9): 0.000439412, 0.000107821, 0.000301698, 0.0010647, 0.0162478,
+            (14): 0.000372831, 5.01907e-05, 3.45371e-05, 0.00183444,
+            (18): 0.000676841, 2.86332e-05, 8.92081e-05, 2.27433e-05,
+            (22): 1.38622e-05, 6.71773e-06, 0.00466704, 0.00293901,
+            (26): 0.00508784, 0.00535443, 0.00308353, 0.00783385, 0.00315418
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 6;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 31 ) / ( 31 ) }
+            DATA {
+            (0): "B10", "B11", "C12", "C13", "Si28", "V50", "V51", "Cr50",
+            (8): "Cr52", "Cr53", "Cr54", "Mn55", "Fe54", "Fe56", "Fe57",
+            (15): "Fe58", "Co59", "Ni58", "Ni60", "Ni61", "Ni62", "Ni64",
+            (22): "Cu63", "Cu65", "Mo92", "Mo94", "Mo95", "Mo96", "Mo97",
+            (29): "Mo98", "Mo100"
+            }
+         }
+      }
+      GROUP "material 2" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0.0662473
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 51 ) / ( 51 ) }
+            DATA {
+            (0): 1.50407e-06, 5.54095e-06, 0.00375911, 4.0657e-05,
+            (4): 0.000375189, 1.0314e-05, 0.000270393, 2.13494e-06,
+            (8): 1.2098e-05, 2.84656e-08, 2.98627e-06, 0.00119152,
+            (12): 0.00023148, 0.00437275, 0.000485622, 0.000121271,
+            (16): 0.000454129, 0.00107737, 0.0165332, 0.000379396,
+            (20): 5.25158e-05, 1.80688e-05, 0.00202185, 0.000748788,
+            (24): 2.99595e-05, 0.000100715, 2.8555e-05, 0.00148982,
+            (28): 0.000664654, 1.80119e-06, 0.00460674, 0.00290101,
+            (32): 0.00502211, 0.00528524, 0.00304371, 0.00773299, 0.00311347,
+            (37): 4.97216e-07, 3.38309e-07, 1.74282e-07, 7.45277e-06,
+            (41): 3.93672e-06, 1.24147e-05, 4.40316e-06, 1.67002e-05,
+            (45): 2.37329e-06, 2.96792e-06, 1.02775e-07, 1.76919e-06,
+            (49): 1.62238e-06, 3.84675e-06
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 6;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 51 ) / ( 51 ) }
+            DATA {
+            (0): "B10", "B11", "C12", "C13", "Si28", "P31", "S32", "S33",
+            (8): "S34", "S36", "V50", "V51", "Cr50", "Cr52", "Cr53", "Cr54",
+            (16): "Mn55", "Fe54", "Fe56", "Fe57", "Fe58", "Co59", "Ni58",
+            (23): "Ni60", "Ni61", "Ni62", "Ni64", "Cu63", "Cu65", "Nb93",
+            (30): "Mo92", "Mo94", "Mo95", "Mo96", "Mo97", "Mo98", "Mo100",
+            (37): "Sn112", "Sn114", "Sn115", "Sn116", "Sn117", "Sn118",
+            (43): "Sn119", "Sn120", "Sn122", "Sn124", "Pb204", "Pb206",
+            (49): "Pb207", "Pb208"
+            }
+         }
+      }
+      GROUP "material 3" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0.100146
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+            DATA {
+            (0): 0.0666982, 0.0334478
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 4;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+            DATA {
+            (0): "H1", "O16"
+            }
+         }
+      }
+      GROUP "material 4" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0.0847187
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+            DATA {
+            (0): 0.0584559, 0.0262628
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 5;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+            DATA {
+            (0): "Cu63", "Cu65"
+            }
+         }
+      }
+      GROUP "material 5" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 1.9206e-06
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+            DATA {
+            (0): 1.51518e-06, 4.05419e-07
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 4;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 2 ) / ( 2 ) }
+            DATA {
+            (0): "N14", "O16"
+            }
+         }
+      }
+      GROUP "material 6" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0.0600499
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 4 ) / ( 4 ) }
+            DATA {
+            (0): 0.000942002, 0.0582424, 0.000629923, 0.00023563
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 4;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 4 ) / ( 4 ) }
+            DATA {
+            (0): "H1", "C12", "C13", "O16"
+            }
+         }
+      }
+      GROUP "material 7" {
+         ATTRIBUTE "depletable" {
+            DATATYPE  H5T_STD_I32LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0
+            }
+         }
+         DATASET "atom_density" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): 0.0656498
+            }
+         }
+         DATASET "nuclide_densities" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SIMPLE { ( 50 ) / ( 50 ) }
+            DATA {
+            (0): 5.45143e-07, 1.98322e-06, 0.00258523, 2.79609e-05,
+            (4): 0.000239005, 1.71825e-05, 0.000242557, 1.91514e-06,
+            (8): 1.08526e-05, 2.55352e-08, 6.69694e-10, 2.67208e-07,
+            (12): 0.00020492, 0.00378603, 0.000420166, 0.000103727,
+            (16): 0.000392455, 0.000996828, 0.0152531, 0.000347544,
+            (20): 4.47548e-05, 2.31547e-05, 0.00158991, 0.000587475,
+            (24): 2.68751e-05, 7.93313e-05, 1.92118e-05, 0.00623687,
+            (28): 0.00278244, 0.00427722, 0.00269348, 0.00466285, 0.0049072,
+            (33): 0.00282596, 0.00717947, 0.00289076, 1.78404e-06,
+            (37): 1.21387e-06, 6.25335e-07, 2.67425e-05, 1.41252e-05,
+            (41): 4.45461e-05, 1.57986e-05, 5.99219e-05, 8.51545e-06,
+            (45): 1.06491e-05, 9.21921e-08, 1.58709e-06, 1.45533e-06,
+            (49): 3.45069e-06
+            }
+         }
+         DATASET "nuclides" {
+            DATATYPE  H5T_STRING {
+               STRSIZE 6;
+               STRPAD H5T_STR_NULLTERM;
+               CSET H5T_CSET_ASCII;
+               CTYPE H5T_C_S1;
+            }
+            DATASPACE  SIMPLE { ( 50 ) / ( 50 ) }
+            DATA {
+            (0): "B10", "B11", "C12", "C13", "Si28", "P31", "S32", "S33",
+            (8): "S34", "S36", "V50", "V51", "Cr50", "Cr52", "Cr53", "Cr54",
+            (16): "Mn55", "Fe54", "Fe56", "Fe57", "Fe58", "Co59", "Ni58",
+            (23): "Ni60", "Ni61", "Ni62", "Ni64", "Cu63", "Cu65", "Mo92",
+            (30): "Mo94", "Mo95", "Mo96", "Mo97", "Mo98", "Mo100", "Sn112",
+            (37): "Sn114", "Sn115", "Sn116", "Sn117", "Sn118", "Sn119",
+            (43): "Sn120", "Sn122", "Sn124", "Pb204", "Pb206", "Pb207",
+            (49): "Pb208"
+            }
+         }
+      }
+   }
+   DATASET "n_materials" {
+      DATATYPE  H5T_STD_U64LE
+      DATASPACE  SCALAR
+      DATA {
+      (0): 7
+      }
+   }
+   GROUP "nuclides" {
+      ATTRIBUTE "n_nuclides" {
+         DATATYPE  H5T_STD_U64LE
+         DATASPACE  SCALAR
+         DATA {
+         (0): 54
+         }
+      }
+      DATASET "awrs" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 54 ) / ( 54 ) }
+         DATA {
+         (0): 9.92692, 10.9147, 11.8969, 12.8917, 27.737, 49.5181, 50.5063,
+         (7): 49.517, 51.4943, 52.4859, 53.4755, 54.4661, 53.476, 55.4544,
+         (14): 56.446, 57.4356, 58.4269, 57.438, 59.416, 60.408, 61.396,
+         (21): 63.379, 62.389, 64.37, 91.1173, 93.0984, 94.0906, 95.0808,
+         (28): 96.0735, 97.0644, 99.0492, 30.7077, 31.6974, 32.6882, 33.6761,
+         (35): 35.6581, 92.1082, 110.944, 112.924, 113.916, 114.906, 115.899,
+         (42): 116.889, 117.882, 118.872, 120.856, 122.841, 202.221, 204.205,
+         (49): 205.198, 206.19, 0.999167, 15.8575, 13.8828
+         }
+      }
+      DATASET "names" {
+         DATATYPE  H5T_STRING {
+            STRSIZE 6;
+            STRPAD H5T_STR_NULLTERM;
+            CSET H5T_CSET_ASCII;
+            CTYPE H5T_C_S1;
+         }
+         DATASPACE  SIMPLE { ( 54 ) / ( 54 ) }
+         DATA {
+         (0): "B10", "B11", "C12", "C13", "Si28", "V50", "V51", "Cr50",
+         (8): "Cr52", "Cr53", "Cr54", "Mn55", "Fe54", "Fe56", "Fe57", "Fe58",
+         (16): "Co59", "Ni58", "Ni60", "Ni61", "Ni62", "Ni64", "Cu63",
+         (23): "Cu65", "Mo92", "Mo94", "Mo95", "Mo96", "Mo97", "Mo98",
+         (30): "Mo100", "P31", "S32", "S33", "S34", "S36", "Nb93", "Sn112",
+         (38): "Sn114", "Sn115", "Sn116", "Sn117", "Sn118", "Sn119", "Sn120",
+         (45): "Sn122", "Sn124", "Pb204", "Pb206", "Pb207", "Pb208", "H1",
+         (52): "O16", "N14"
+         }
+      }
+   }
+}
+}
