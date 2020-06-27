@@ -15,7 +15,7 @@ def create_input(geom_type, batches, nps, plot=False, vol_calc=False):
     model = openmc.model.Model()
 
     # settings
-    model.settings.batches = 5
+    model.settings.batches = batches
     model.settings.inactive = 0
     model.settings.particles = nps # particle per batch
     model.settings.run_mode = 'fixed source'

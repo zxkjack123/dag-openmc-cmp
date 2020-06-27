@@ -9,7 +9,12 @@ mse.png
 similarity.png
 *.err
 *~
-FNG/compare/*.png
+# demo_collimator
+demo_collimator/results/*.png
+demo_collimator/geometry/dagopenmc/*.h5m
+demo_collimator/geometry/dagopenmc/*.trelis
+# FNG
+FNG/results/*.png
 FNG/geometry/dagopenmc/*.h5m
 FNG/geometry/dagopenmc/*.trelis
 

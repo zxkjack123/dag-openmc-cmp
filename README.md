@@ -9,6 +9,7 @@ For more information about these projects please see:
 
 
 *NOTE: These models rely OpenMC's ENDFB-VIII.0 data [found here](https://openmc.org/lanl-data-libraries/)*
+       *The h5m format CAD models for DAG-OpenMC should be placed in geometry/dagopenmc/*
 
 
 ## Running a comparison

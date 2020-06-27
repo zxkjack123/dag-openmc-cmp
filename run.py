@@ -20,6 +20,7 @@ def main(batches, particles, run, plot, vol, n_threads):
 
     # move to the dagmc run dir
     os.chdir("../dagopenmc_run")
+    os.system("ln -sf ../geometry/dagopenmc/dagmc.h5m .")
 
     # create inputs for the run
     create_input("dagmc", batches, particles, plot, vol)
